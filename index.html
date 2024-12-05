@@ -277,11 +277,11 @@
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("Introduction_InText");
-    const WhataboutthebraingivesustheabilitytodomathsCount = displayWordCount("What about the brain gives us the ability to do maths?_InText");
-    const HowaresomepeoplebetteratmathsthanothersCount = displayWordCount("How are some people better at maths than others?_InText");
+    const What about the brain gives us the ability to do maths?Count = displayWordCount("What about the brain gives us the ability to do maths?_InText");
+    const How are some people better at maths than others?Count = displayWordCount("How are some people better at maths than others?_InText");
     const ConclusionCount = displayWordCount("Conclusion_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + WhataboutthebraingivesustheabilitytodomathsCount + HowaresomepeoplebetteratmathsthanothersCount + ConclusionCount;
+    const totalWordCount = IntroductionCount + What about the brain gives us the ability to do maths?Count + How are some people better at maths than others?Count + ConclusionCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
